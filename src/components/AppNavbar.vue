@@ -78,14 +78,25 @@ export default{
             display: flex;
             flex-direction: row;
             gap: 22px;
+            height: 100%;
+            align-items: center;
 
             a{
                 cursor: pointer;
+                height: 100%;
+
+                strong:hover{
+                    color: #0282F9;
+                }
             }
             #links-container{
 
             font-size: 0.6em;
             color: black;
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
             }
         }
 
@@ -97,5 +108,13 @@ export default{
 
     .cliccata{
         color: #0282F9;
+        ::before{
+            content:" ";
+            background-color: #0282F9;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5px;
+        }
     }
 </style>
